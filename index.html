@@ -3,86 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+    <title>Homework Management - Nguyễn Đình Thịnh</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-      table,
-      tr,
-      td,
-      th {
-        border: 1px solid #ccc;
-        border-collapse: collapse;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      td {
-        padding: 8px 12px;
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #1a0628 0%, #3d5afe 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .app-container {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 1000px; /* Độ rộng tối ưu */
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      }
+
+      .header-info h3 {
+        font-size: 14px;
+        color: #007bff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+      }
+      .header-info h1 {
+        font-size: 32px;
+        color: #1a1a1a;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .header-info h2 {
+        font-size: 18px;
+        color: #546e7a;
+        margin-bottom: 20px;
+      }
+      .update-time {
+        font-size: 13px;
+        color: #90a4ae;
+        margin-bottom: 40px;
+      }
+
+      /* BẢNG CÓ KẺ VIỀN */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        border: 1px solid #e0e6ed; /* Viền bao ngoài bảng */
+      }
+
+      thead th {
+        background-color: #6200ea;
+        color: #ffffff;
+        font-weight: 600;
+        text-align: left;
+        padding: 18px 20px;
+        border: 1px solid #7c4dff; /* Viền ngăn cách tiêu đề */
+      }
+
+      tbody td {
+        padding: 20px;
+        color: #37474f;
+        font-size: 15px;
+        vertical-align: middle;
+        border: 1px solid #e0e6ed; /* Kẻ viền ngăn cách giữa các ô */
+      }
+
+      tbody tr:hover {
+        background-color: #f8f9fa;
+      }
+
+      /* NHÓM LINK GOM LẠI GẦN NHAU */
+      .link-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Khoảng cách chuẩn giữa các nút */
+      }
+
+      table td a {
+        display: inline-block;
+        background-color: #7c4dff;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+
+      table td a:hover {
+        background-color: #6200ea;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(124, 77, 255, 0.3);
+      }
+
+      footer {
         text-align: center;
+        font-size: 13px;
+        color: #b0bec5;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #f0f2f5;
       }
     </style>
-    <h1>Nguyễn Đình Thịnh</h1>
-    <h2>FSO2602</h2>
-    <h3>Bài Tập Về Nhà</h3>
-    <p>Thời gian cập nhật</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Buổi</th>
-          <th>Link</th>
-          <th>Ghi chú</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Buổi-01</td>
-          <td><a href="./Day01/index.html">Giới thiệu bản thân</a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-02</td>
-          <td><a href="./Day02/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-03</td>
-          <td><a href="./Day03/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-04</td>
-          <td><a href="./Day04/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-05</td>
-          <td><a href="./Day05/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-06</td>
-          <td><a href="./Day06/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-07</td>
-          <td><a href="./Day07/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-08</td>
-          <td><a href="./Day08/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-09</td>
-          <td><a href="./Day09/index.html"></a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Buổi-10</td>
-          <td><a href="./Day10/index.html"></a></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header-info">
+        <h3>Bài Tập Về Nhà</h3>
+        <h1>Nguyễn Đình Thịnh</h1>
+        <h2>FSO2602</h2>
+        <p class="update-time">Thời gian cập nhật: 31/03/2026</p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 15%">Buổi</th>
+            <th style="width: 65%">Link bài làm</th>
+            <th style="width: 20%">Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FT1-1</td>
+            <td>
+              <div class="link-group">
+                <a href="./FT1-1/Bai1/bai1.html">Product UI</a>
+                <a href="./FT1-1/Bai2/bai2.html">Login Form</a>
+                <a href="./FT1-1/Bai3/bai3.html">Collection List</a>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FT1-2</td>
+            <td>
+              <div class="link-group">
+                <a href="./FT1-2/Bai1/bai1.html">Users List</a>
+                <a href="./FT1-2/Bai2/bai2.html">Job Cards</a>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FT1-3</td>
+            <td>
+              <div class="link-group">
+                <a href="./FT1-3/bai1.html">Menu Navigation</a>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>FT1-4</td>
+            <td>
+              <div class="link-group">
+                <a href="./Midtest/test.html">MidTest</a>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <footer>&copy; 2026 - Homework FSO2602 by Nguyễn Đình Thịnh</footer>
+    </div>
   </body>
 </html>
