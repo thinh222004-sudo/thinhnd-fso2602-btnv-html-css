@@ -31,18 +31,22 @@ html {
   position: relative;
   z-index: 1;
   width: 640px;
+  height: 464px;
   padding: 72px;
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 .search-content {
+  width: 100%;
   display: flex;
   gap: 12px;
   margin-bottom: 32px;
+  justify-content: space-between;
 }
 
 .flex-row-searching {
+  max-width: 100%;
   width: 348px;
   height: 56px;
   flex: 1;
@@ -62,17 +66,18 @@ html {
 .flex-row-searching input {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 16px, auto, 16px;
   width: 100%;
   font-family: inherit;
   font-size: 16px;
 }
 
 .flex-row-button-map {
-  width: 136px;
+  min-width: 136px;
   height: 56px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #231942;
   border-radius: 4px;
   padding: 16px;
@@ -85,9 +90,10 @@ html {
   border: none;
   color: #ffffff;
   font-weight: var(--fw-card-items);
-  margin-left: 8px;
   cursor: pointer;
   font-family: inherit;
+  font-size: var(--fz-card-items);
+  white-space: nowrap;
 }
 .card-group {
   display: grid;
@@ -96,11 +102,13 @@ html {
 }
 
 .card-items {
+  width: 112px;
+  height: 108px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px auto;
   border-radius: 8px;
   transition: transform ease-in-out 0.3s;
   cursor: pointer;
@@ -139,7 +147,6 @@ html {
   background-color: #e2ffd4;
 }
 .card-items:nth-child(6) {
-  background-color: #ffffff;
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
 }
