@@ -15,7 +15,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  /* max-width: 1512px; */
+  max-width: 1512px;
   padding: 40px 120px 100px;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
   align-items: center;
   margin-bottom: 100px;
   > h1 {
-    font-weight: 600px;
+    font-weight: 500;
     font-size: 32px;
     color: black;
   }
@@ -231,6 +231,7 @@ h2 {
   display: grid;
   gap: 31px;
   grid-template-columns: repeat(4, 1fr);
+  /* padding-bottom: 20px; */
 }
 .profile-teacher-fc {
   width: 295px;
@@ -248,6 +249,8 @@ h2 {
     color: black;
     margin-bottom: 6px;
     margin-left: 20px;
+    width: 76px;
+    height: 30px;
   }
   > .major {
     color: #9b948e;
