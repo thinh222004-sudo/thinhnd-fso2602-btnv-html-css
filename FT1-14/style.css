@@ -16,14 +16,23 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1512px;
-  padding: 40px 120px 100px;
+  padding: 40px 0 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   position: relative;
   width: 100%;
   min-height: 100vh;
+}
+.section-container {
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.section-introduction-container {
+  width: 100%;
+  padding-left: 120px;
 }
 .title-container-fr {
   /* position: absolute; */
@@ -72,11 +81,11 @@ a {
 }
 .introduction-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 79px;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-bottom: 91px;
 }
 .main-introduction-fc {
@@ -127,9 +136,11 @@ h2 {
     width: 80px;
   }
   > .career-container {
+    width: 180px;
+    height: 130px;
     position: absolute;
     bottom: -30px;
-    left: 0;
+    left: 30px;
     background: white;
     padding: 20px;
     border-radius: 20px;
@@ -137,12 +148,14 @@ h2 {
   }
 }
 .main-name-designer {
+  height: 24px;
   font-weight: 500;
   font-size: 16px;
   color: #000;
   margin-bottom: 2px;
 }
 .sub-career {
+  height: 21px;
   color: #9b948e;
   font-size: 14px;
   font-weight: 300;
@@ -152,11 +165,10 @@ h2 {
   display: flex;
   gap: 8px;
   flex-direction: row;
-  align-items: center;
+  margin-bottom: 0;
   > .stars {
-    width: 24px;
-    height: 24px;
-    display: block;
+    width: 18px;
+    height: 18px;
   }
 }
 .sponsor-container-fc {
@@ -231,6 +243,7 @@ h2 {
   display: grid;
   gap: 31px;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
   /* padding-bottom: 20px; */
 }
 .profile-teacher-fc {
