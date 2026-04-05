@@ -1,48 +1,19 @@
-:root {
-  --title-ff: "Merriweather", serif;
-  --content-ff: "Poppins", sans-serif;
-
-  --title-fw: 900;
-  --content-fw: 500;
-
-  --title-fs: 32px;
-  --job-name-fs: 24px;
-  --job-slot-fs: 18px;
-  --footer-fs: 16px;
-
-  --job-card-br: 16px;
-  --job-icon-br: 14px;
-  --job-slot-br: 8px;
-
-  --con-max-wid: 1054px;
-  --con-hei: 779px;
-  --job-card-wid: 330px;
-  --footer-wid: 845px;
-
-  --job-card-group-gap: 32px;
-  --job-card-gap: 32px;
-  --job-name-gap: 16px;
-
-  --job-card-pd: 48px 40px;
-  --job-icon-pd: 16px;
-  --job-slot-pd: 16px 24px;
-
-  --common-color: #1e2246;
-  --job-slot-border-color: #c2c5e2;
-  --job-card-bs-color: #b4bfe166;
-  --page-bg-color: #f3f6ff;
-  --job-card-bg-color: #fff;
-}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --title-ff: "Merriweather", serif;
+  --main-ff: "Poppins", sans-serif;
+}
+
 html {
-  font-family: var(--content-ff);
-  font-weight: var(--content-fw);
-  color: var(--common-color);
-  background-color: var(--page-bg-color);
+  font-family: var(--main-ff);
+  font-weight: 500;
+  color: #1e2246;
+  background-color: #f3f6ff;
 }
 
 .container {
@@ -51,27 +22,27 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: var(--con-max-wid);
+  max-width: 1054px;
   width: 100%;
-  height: var(--con-hei);
+  height: 779px;
 
   .title {
     font-family: var(--title-ff);
-    font-weight: var(--title-fw);
-    font-size: var(--title-fs);
+    font-weight: 900;
+    font-size: 32px;
     text-align: center;
   }
 
   .job-card-group {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--job-card-group-gap);
+    gap: 32px;
     margin: 72px 0 61px 0;
     width: 100%;
   }
 
   .footer {
-    width: var(--footer-wid);
+    width: 845px;
     text-align: center;
     opacity: 70%;
   }
@@ -81,23 +52,22 @@ html {
   display: inherit;
   flex-direction: column;
   align-items: center;
-  gap: var(--job-card-gap);
+  gap: 32px;
 
-  width: var(--job-card-wid);
-  padding: var(--job-card-pd);
-  border-radius: var(--job-card-br);
-  background-color: var(--job-card-bg-color);
-  box-shadow: 0px 24px 44px 0px var(--job-card-bs-color);
+  width: 330px;
+  padding: 48px 40px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 24px 44px 0px #b4bfe166;
 
   .job-name {
     display: inherit;
-    /* justify-content: center; */
     align-items: center;
-    gap: var(--job-name-gap);
+    gap: 16px;
 
     > img {
-      border-radius: var(--job-icon-br);
-      padding: var(--job-icon-pd);
+      border-radius: 14px;
+      padding: 16px;
     }
 
     .design {
@@ -125,29 +95,29 @@ html {
     }
 
     > p {
-      font-size: var(--job-name-fs);
+      font-size: 24px;
     }
   }
 }
 
 .job-card {
   > .job-slot {
-    border-radius: var(--job-slot-br);
-    border: 1px solid var(--job-slot-border-color);
-    padding: var(--job-slot-pd);
+    border-radius: 8px;
+    border: 1px solid #c2c5e2;
+    padding: 16px 24px;
     width: 100%;
 
-    font-family: var(--content-ff);
-    font-weight: var(--content-fw);
-    font-size: var(--job-slot-fs);
-    color: var(--common-color);
-    background-color: var(--job-card-bg-color);
+    font-family: var(--main-ff);
+    font-weight: 500;
+    font-size: 18px;
+    color: #1e2246;
+    background-color: #fff;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 
     &:hover {
-      background-color: var(--common-color);
-      color: var(--job-card-bg-color);
+      background-color: #1e2246;
+      color: #fff;
     }
   }
 }

@@ -27,8 +27,8 @@ body {
 
 .login-title {
   font-size: 24px;
-  font-weight: 700;
-  color: #000;
+  font-weight: 500;
+  color: #111;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -42,6 +42,9 @@ body {
   font-size: 14px;
   color: #000;
   margin-bottom: 8px;
+}
+input::placeholder {
+  color: #111;
 }
 .label-row {
   display: flex;
