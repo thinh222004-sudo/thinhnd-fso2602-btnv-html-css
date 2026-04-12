@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "BeaufortforLoL";
+  src: url("./font/beaufort-for-lol/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+body {
+  background-color: #fff;
+  font-family: "BeaufortforLOL", serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.image-banner {
+  width: 100%;
+}
+.hero-banner {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.main-nav img {
+  width: 240px;
+  height: 105px;
+  margin-bottom: 32px;
+}
+
+.nav-container {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.nav-title {
+  cursor: pointer;
+  transition: color 0.3s;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+}
+.champion-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 328px;
+  background-color: #0e4c67;
+  cursor: pointer;
+}
+
+.champion-image {
+  width: 100%;
+  min-height: 370px;
+}
+
+.champion-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: #0e4c67;
+  min-height: 80px;
+}
+
+.video-banner {
+  width: 100%;
+  margin-bottom: 73px;
+}
+
+.video-reponsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-reponsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.signin-container {
+  width: 100%;
+  background-color: #0e4c67;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 23px 24px 0;
+  gap: 23px;
+}
+.signin input {
+  background: #0e4c67;
+  border: 2px solid #ffa800;
+  color: white;
+  padding: 16px 15px;
+  margin-right: 10px;
+  width: 250px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 1px;
+}
+input::placeholder {
+  color: white;
+  opacity: 1;
+}
+.play {
+  background: #ffa800;
+  border: none;
+  padding: 16px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  min-height: 52px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .champion-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .champion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signin-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .signin input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .play {
+    width: 100%;
+  }
+}
